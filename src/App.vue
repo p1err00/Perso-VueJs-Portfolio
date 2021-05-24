@@ -32,6 +32,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #f8ca99;
+  scroll-behavior: smooth;
 }
 
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div id="resume">
         <div class="title-loader">
             <h2>Resume...</h2>
         </div>
@@ -80,7 +80,7 @@ export default {
 }
 </script>
 <style scoped>
-    #app{
+    #resume{
         height: 120vh;
         width: 100%;
         padding-top: 100px;
@@ -88,6 +88,7 @@ export default {
         background-image: linear-gradient(#481c1c 10px, #fff 1%);
         font-family: consolas;
         align-items: center;
+        scroll-behavior: smooth;
     }
     .resume-content{
         display: flex;

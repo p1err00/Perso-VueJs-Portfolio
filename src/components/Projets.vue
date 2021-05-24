@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div id="projets">
         <splide :options="options">
             <splide-slide class="slide" v-for="projet in projets" v-bind:key="projet">
                 <div class="card">
@@ -112,9 +112,10 @@ export default {
 </script>
 
 <style scoped>
-#app{
+#projets{
     height: 100vh;
     margin-top: 20vh;
+    scroll-behavior: smooth;
 }
 a{
     color: #a05151;

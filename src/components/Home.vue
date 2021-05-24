@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div id="home">
         
         <img src="../assets/fontCodeRight.png" class="cornerImgRight" />
         <img src="../assets/fontCodeLeft.png" class="cornerImgLeft" />
@@ -38,12 +38,13 @@ export default {
 </script>
 
 <style scoped>
-    #app{
+    #home{
         height: 100vh;
         font-family: initial;
         text-decoration: none;
         padding-top: 60px;
         background-color: #481c1c;
+        scroll-behavior: smooth;
     }
     .cornerImgLeft{
         bottom: 5px;

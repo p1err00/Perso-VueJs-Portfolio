@@ -1,6 +1,6 @@
 <template>
     <div>
-        <a href="#">
+        <a href="#resume">
             <span></span>
             <span></span>
             <span></span>
@@ -15,6 +15,9 @@ export default {
 }
 </script>
 <style scoped>
+    div{
+        scroll-behavior: smooth;
+    }
     a{
         position: relative;
         display: inline-block;
