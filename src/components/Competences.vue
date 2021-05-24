@@ -48,27 +48,23 @@ export default {
             desc: "Mes competences et aptitudes",
             competences:[
                 {"title" : "Gestion de projet", 
-                "desc" : "De la réfléxion à la conception, je saurais mettre en place les moyens adequates pour la réalisation de vos projets"},
+                "desc" : "De la réfléxion à la conception, je saurais mettre en place les moyens adequates pour la réalisation de chaque projet"},
                 {"title" : "Developpement",
-                "desc" : "Parmis tous les choix existants, je saurais mettre en place les outils necessaire tout au long de mon developpement"},
+                "desc" : "Parmis tous les choix existants, je saurais selectionner les outils appropriés pour mener à bien mon developpement"},
                 {"title" : "Formation",
                 "desc" : "Dans un corps de métier en constante évolution, je saurais me former aux nouvelles méthodes et technologies qui s'y ajoutent"}
             ],
             aptitudes:[
                {"title" : "Developpement logiciel",
-               "langage" : "C++",
-               "framework" : "QtCreacor"},
+               "langage" : "C++, Java",
+               "framework" : "QtCreacor, Eclipse"},
                {"title" : "Developpement Web",
-               "langage" : "JavaScript, PHP",
+               "langage" : "HTML, JavaScript, PHP",
                "framework" : "VueJs, Symfony, NodeJs"},
             ]
         }
     },
         methods:{
-            focus: function(competence){
-                alert(competence);
-                
-            }
         }
 }
 </script>
@@ -85,7 +81,6 @@ export default {
         background: rgba(236, 236, 236, 0.445);
         color: grey;
     }
-    
     .title{
         font-size: 68px;
         border-bottom: 3px solid red;

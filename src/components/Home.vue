@@ -15,19 +15,18 @@
 
                     <span class="resume-title">{{ desc }}</span>
                 </div>
-                <div class="main-button">
-                    <a href="#portfolio" class="discover-button">Decouvrir</a>
-                </div>
+                <HomeButton/>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-
+import HomeButton from './HomeButton.vue'
 export default {
     name:'Home',
     components:{
+        HomeButton
     },
     data(){
         return{
@@ -60,14 +59,7 @@ export default {
         right: 0;
         filter: blur(4px);
     }
-    @keyframes rotate{
-        0%{
-            filter: blur(5px);
-        }
-        100%{
-            transform: rotate(360deg);
-        }
-    }
+
     .content{
         padding-top: 285px;
     }
@@ -138,128 +130,5 @@ export default {
         padding: auto;
         margin-bottom: 20px;
     }
-    .hr2{
-        border: 2px solid red;
-        width: 36%;
-        margin: auto;
-        padding: auto;
-        margin-bottom: 20px;
-    }
-    .hr3{
-        border: 2px solid red;
-        width: 40%;
-        margin: auto;
-        padding: auto;
-        margin-bottom: 20px;
-    }
-
-    .main-button{
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-top: 20px;
-    display: inline-block;
-    text-decoration: none;
-}
-.discover-button{
-    font-size: 30px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #2a2b2f;
-    padding: 15px 25px;
-}
-.discover-button:hover{
-    text-decoration: none;
-    color: black;
-}
-.main-button::before{
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    transform: translate(3%, -11%);
-    background: transparent;
-    border: 2px solid transparent;
-    text-decoration: none;
-}
-.main-button:hover:before{
-    animation: animate 1s linear forwards;
-}
-@keyframes animate{
-    0%{
-        width: 0;
-        height: 0;
-        border-top-color: #000;
-        border-right-color: transparent;
-        border-bottom-color: transparent;
-        border-left-color: transparent;
-        
-    }
-    50%{
-        width: 200px;
-        height: 0;
-        border-top-color: #000;
-        border-right-color: #000;
-        border-bottom-color: transparent;
-        border-left-color: transparent;
-        
-    }
-    100%{
-        width: 200px;
-        height: 60px;
-        border-top-color: #000;
-        border-right-color: #000;
-        border-bottom-color: transparent;
-        border-left-color: transparent;
-        z-index: -1;
-    }
-}
-
-
-
-
-.main-button::after{
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    transform: translate(-105%, -24%);
-    background: transparent;
-    border: 5px solid transparent;
-    padding-bottom: 5px;
-}
-.main-button:hover:after{
-    animation: animate2 1s linear forwards;
-}
-@keyframes animate2{
-    0%{
-        width: 0;
-        height: 0;
-        border-top-color: transparent;
-        border-right-color: transparent;
-        border-bottom-color: transparent;
-        border-left-color: #000;
-        
-    }
-    50%{
-        width: 200px;
-        height: 0;
-        border-top-color: transparent;
-        border-right-color: transparent;
-        border-bottom-color: #000;
-        border-left-color: #000;
-        
-    }
-    100%{
-        width: 200px;
-        height: 60px;
-        border-top-color: transparent;
-        border-right-color: transparent;
-        border-bottom-color: #000;
-        border-left-color: #000;
-        text-decoration: none;
-        z-index: -1;
-    }
-}
-
+    
 </style>

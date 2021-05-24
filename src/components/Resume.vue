@@ -10,8 +10,8 @@
                 </div>
                     
                 <p class="text">
-                    <span class="acollade">{</span> Feru d'informatique depuis toujours, je met aux profits des autres mes competences dans ce domaine.
-                    Que cela soit du developpement web ou logiciel, frontend ou backend, ma curiosité et mon investissement me permettent 
+                    <span class="acollade">{</span> Féru d'informatique depuis toujours, je met au profit des autres mes compétences dans ce domaine.
+                    Que cela soit du développement web ou logiciel, frontend ou backend, ma curiosité et mon investissement me permettent 
                     de mener à bien chacun de mes projets. <span class="acollade">}</span>
                 </p>
 

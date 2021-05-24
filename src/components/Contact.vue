@@ -1,106 +1,88 @@
 <template>
-    <div id="contact">
-        <div class="container-contact">
-                <div class="card-contact">
-                    <div class="card-body">
-                        <i class="far fa-envelope logo-contact"></i>
-                        <h5 class="card-title">Mail</h5>
-
-
-                        <div class="card-text">
-                            <p class="span-mail">pierro.adrien.simon@gmail.com</p>
-                        </div>
-                        <div class="card-link">
-                            <a href="#" class="card-link">Copier</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card-contact">
-                    <div class="card-body">
-                        <i class="fas fa-mobile-alt logo-contact"></i>
-                        <h5 class="card-title">Phone</h5>
-
-                        <div class="card-text">
-
-                            <p class="span-phone">06.07.08.09.10</p>
-                        </div>
-                        <div class="card-link">
-                            <a href="#" class="card-link">Copier</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card-contact">
-                    <div class="card-body">
-                        <i class="fab fa-github logo-contact"></i>
-                        <h5 class="card-title">Github</h5>
-
-                        <div class="card-text">
-
-                            <p class="span-git">www.gitMesCouilles.com</p>
-                        </div>
-                        <div class="card-link">
-                            <a href="#" class="card-link">Copier</a>
-                        </div>
-                    </div>
-                </div>
+    <div id="app">
+        <h1>Contact</h1>
+        <div class="content">
+            <div class="b">
+                <button><a href="./documents/CurriculumVitae.pdf" download="">CV</a></button>
             </div>
-        
+            <div class="b">
+                <button class="github"><a href="https://github.com/p1err00/"><i class="fab fa-github"></i></a></button>
+            </div>
+            <div class="b">
+                <button class="linkedin"><a href="https://www.linkedin.com/in/pierre-adrien-simon-6197a719a/"><i class="fab fa-linkedin-in"></i></a></button>
+            </div>
+        </div>
+        <div class="infos">
+            <a href="mailto:pierro.adrien.simon@gmail.com" class="key">{{ email }}</a>
+            <p class="key">{{ tel }}</p>
+        </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'Contact'
+    name: "Contact",
+    data() {
+        return {
+            email: "pierro.adrien.simon@gmail.com",
+            tel: "+33 (0)6.95.14.00.99",
+            linkedin: "azeazeaze",
+            github: "azeazeazze"
+        }
+    },
+    methods:{
+        githubRedirect(){
+            document.location.href="https://github.com/p1err00/";
+        }
+    }
 }
 </script>
-
 <style scoped>
-.footer-section{
-    position: relative;
-}
-.container-contact{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 150px;
-    background: #232427;
-    padding: 100px;
-    bottom: 0;
-    font-family: initial;
-    border-top: 15px double grey;
-}
-.card-contact:hover{
-    animation: cardContact 1s forwards;
-}
-@keyframes cardContact{
-    0%{
-        transform: translate(0, 0);
+    #app{
+        height: 50vh;;
+        background: #481c1c;
+        padding-top: 40px;
     }
-    100%{
-        transform: translate(0, -20%);
+    h1{
+        font-size: 58px;
     }
-}
-.card-contact{
-    width: 18rem;
-    text-align: center;
-    border-radius: 15px;
-    background: white;
-}
-.card-title{
-    margin-bottom: 20px;
-}
-
-.card-text{
-    border-top: 1px solid black;
-    border-bottom: 1px solid grey;
-    padding-top: 20px;
-    padding-bottom: 18px;
-}
-.card-link{
-    margin-top: 20px;
-}
-.logo-contact{
-    font-size: 30px;
-}
-</style>
+    .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: auto;
+        margin-top: 40px;
+        height: 100px;
+    }
+    .b{
+        width: 100%;
+    }
+    button{
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background: transparent;
+        font-size: 24px;
+        color:rgb(139, 96, 16);
+        transition: .3s;
+    }
+    button:hover{
+        width: 90px;
+        height: 90px;
+    }
+    .key{
+        font-size: 28px;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    a{
+        color: rgb(197, 124, 39);
+    }
+    a:hover{
+        text-decoration: none;
+        color: #a05151;
+    }
+</style> 
