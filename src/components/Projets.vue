@@ -301,10 +301,10 @@ a{
 
 @media(max-width: 420px){
     #projets{
-        height: 180vh;
+        height: 190vh;
     }
     .slide{
-        height: 170vh;
+        height: 180vh;
     }
     .card{
         display: flex;

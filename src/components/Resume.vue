@@ -291,7 +291,7 @@ export default {
     }
     @media (max-width: 440px){
         #resume{
-            height: 280vh;
+            height: 320vh;
         }
     }
 </style>
