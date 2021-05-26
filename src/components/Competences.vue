@@ -65,6 +65,7 @@ export default {
         }
     },
         methods:{
+
         }
 }
 </script>
@@ -150,5 +151,30 @@ export default {
     }
     .content-left{
         margin: auto;
+    }
+
+
+    @media (max-width: 1080px){
+        #app{
+            height: 100%;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+        }
+        .competences .paragraphe{
+            width: 200px;
+        }
+        .par-title{
+            font-size: 25px;
+            width: 100%;
+        }
+        .separator{
+            margin-top: 20px;
+        }
+        .par-resume{
+            font-size: 15px;
+            filter: blur(0);
+        }
     }
 </style>

@@ -85,4 +85,5 @@ export default {
         transition: 1s;
         transition-delay: .75s;
     }
+    
 </style>

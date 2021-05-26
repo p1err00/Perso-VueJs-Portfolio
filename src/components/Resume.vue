@@ -175,8 +175,7 @@ export default {
         padding-right: 10%;
     }
     .card{
-        height: 300px;
-        width: 100%;
+        
         padding-left: 15px;
         padding-top:20px;
         margin:10px;
@@ -186,6 +185,10 @@ export default {
         overflow: hidden;
         transition: all .2s;
         z-index: 1;
+    }
+    .card .card-title{
+        height: 300px;
+        width: 100%;
     }
     .card-title{
         width: 100%;
@@ -223,5 +226,72 @@ export default {
     .card:hover img{
         width: 50px;
         height: 50px;
+    }
+    @media (max-width: 1900px){
+        #resume{
+            height: 200vh;
+        }
+        .img-degree{
+            transition: none;
+        }
+    }
+    @media(max-width: 1080px){
+        #resume{
+            height: 200vh;
+        }
+        img{
+            display: none;
+        }
+        .text{
+            font-size: 2.6vw;
+            padding-left: 20px;
+        }
+        .card{
+            height: 420px;
+        }
+        .card .card-title{
+            height: 150px;
+        }
+        .card-title{
+            font-size: 28px;
+        }
+        .card-text{
+            margin-top:0;
+        }
+    }
+    @media (max-width: 620px) {
+        #resume{
+            height: 200vh;
+        }
+        .resume-content{
+            display: flex;
+            flex-direction: column;
+        }
+        .text{
+            font-size: 4.6vw;
+            border: none;
+            text-align: center;
+            line-height: 40px;
+        }
+        img{
+            display: none;
+        }
+        .formation{
+            display: flex;
+            flex-direction: column;
+        }
+        .card{
+            height: 200px;
+            width: 100%;
+        }
+        .card-title{
+            font-size: 25px;
+        }
+
+    }
+    @media (max-width: 340px){
+        #resume{
+            height: 300vh;
+        }
     }
 </style>

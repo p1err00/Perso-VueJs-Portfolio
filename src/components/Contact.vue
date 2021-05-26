@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div id="contact">
         <h1>Contact</h1>
         <div class="content">
             <div class="b">
@@ -38,7 +38,7 @@ export default {
 }
 </script>
 <style scoped>
-    #app{
+    #contact{
         height: 50vh;;
         background: #481c1c;
         padding-top: 40px;
@@ -85,4 +85,30 @@ export default {
         text-decoration: none;
         color: #a05151;
     }
+
+@media(max-width: 1900px){
+    #contact{
+        height: 80vh;
+    }
+}
+
+@media(max-width: 1080px){
+    #contact{
+        height: 80vh;
+    }
+}
+
+@media(max-width: 650px){
+    #contact{
+        height: 75vh;
+    }
+}
+@media(max-width: 430px){
+    #contact{
+        height: 75vh;
+    }
+    .key{
+        font-size: 20px;
+    }
+}
 </style> 

@@ -65,8 +65,8 @@ export default {
                 {
                     "name": "Laboratoire VR",
                     "date": "2018",
-                    "destinataire": "Université de Bourgogne - Facultée de Dijon",
-                    "desc": "Afin d'accompagner et de former les étudiants en pharmacologie, la facultée de Dijon à mis en place un projet en Réalité Virtuelle de simulation de laboratoire. Le but de ce projet était de former les étudiants à utiliser les différentes machines de laboratoire sans prendre le risque d'engendrer des dommages ou des erreures sur de réèlles machines physiques, mais aussi de voir la réaction des étudiants lors de problèmes aléatoires (insecte, depart de feu, alarme incendie, etc...).",
+                    "destinataire": "Université de Dijon",
+                    "desc": "Afin d'accompagner et de former les étudiants en pharmacologie, la facultée de Dijon à mis en place un projet en Réalité Virtuelle de simulation de laboratoire. Le but étant de former les étudiants par simulation virtuelle, mais aussi de voir leurs réactions lors de problèmes aléatoires (insecte, depart de feu, alarme incendie, etc...).",
                     "techno": ["Unity","C#"],
                     "link": ""
                 },
@@ -95,6 +95,15 @@ export default {
                     "desc": "Une todolist en Javascript communiquant avec une API developpé sous Flask",
                     "techno": ["Javascript", "Python", "Flask"],
                     "link": "https://github.com/p1err00/Todolist",
+                    "tooltip": "Depot github"
+                },
+                {
+                    "name": "Pac-Man",
+                    "date": "2018",
+                    "destinataire": "Projet personnel",
+                    "desc": "Developpement du celebre jeu Pac-man en langage C",
+                    "techno": ["C", "GCC"],
+                    "link": "https://github.com/p1err00/PacMan",
                     "tooltip": "Depot github"
                 }
             ],
@@ -126,8 +135,8 @@ a{
     height: 70vh;
 }
 .card{
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     padding: 30px;
     text-align: left;
     background: rgba(83, 83, 83, 0);
@@ -248,6 +257,69 @@ a{
     }
     100%{
         opacity: 1;
+    }
+}
+
+@media(max-width: 1900px){
+    .slide{
+        height: 100vh;
+    }
+}
+
+@media(max-width: 1080px){
+    #projets{
+        height: 180vh;
+    }
+    .slide{
+        height: 180vh;
+    }
+}
+
+@media(max-width: 650px){
+    #projets{
+        height: 180vh;
+    }
+    .slide{
+        height: 140vh;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-footer{
+        font-size: 14px;
+    }
+    .desc{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .destinataire{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 420px){
+    #projets{
+        height: 180vh;
+    }
+    .slide{
+        height: 170vh;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-footer{
+        font-size: 14px;
+    }
+    .desc{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .destinataire{
+        font-size: 16px;
     }
 }
 </style>

@@ -38,6 +38,9 @@ export default {
 </script>
 
 <style scoped>
+@media(max-width: 2850px) {
+    
+
     #home{
         height: 100vh;
         font-family: initial;
@@ -132,4 +135,63 @@ export default {
         margin-bottom: 20px;
     }
     
+}
+    @media(max-width: 1080px){
+        .content{
+            padding-top: 200px;
+        }
+
+    }
+    @media (max-width: 650px) {
+        .content{
+            padding-top: 200px;
+        }
+        .hr{
+            position: absolute;
+            margin-left: 20%;
+        }
+    }
+    @media (max-width: 320px) {
+        .content {
+           padding-top: 160px;
+        }
+        .div-title{
+            max-width: 100%;
+            max-height: 60px;
+            border: none;
+        }
+        .main-title{ 
+            text-align: center;
+            max-width: 100%;
+            max-height: 50px;
+            overflow: hidden;
+            animation: text 3s 1;
+            animation-fill-mode: forwards;
+        }
+        .hr{
+            position: absolute;
+            margin-left: 20%;
+        }
+        @keyframes text{
+        0%{
+            color: #481c1c;
+            filter: blur(5px);
+        }
+        30%{
+            letter-spacing: 20px;
+
+        }
+        85%{
+            letter-spacing: 8px;
+
+        }
+    }
+        .resume-title{
+            margin-top: 8px;
+            font-size: 4.6vw;
+            text-align: center;
+        }
+    }
+
+
 </style>
