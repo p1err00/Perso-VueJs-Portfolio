@@ -10,7 +10,7 @@
                 </div>
                     
                 <p class="text">
-                    <span class="acollade">{</span> Féru d'informatique depuis toujours, je met au profit des autres mes compétences dans ce domaine.
+                    <span class="acollade">{</span> Féru d'informatique depuis toujours, je mets au profit des autres mes compétences dans ce domaine.
                     Que cela soit du développement web ou logiciel, frontend ou backend, ma curiosité et mon investissement me permettent 
                     de mener à bien chacun de mes projets. <span class="acollade">}</span>
                 </p>
@@ -229,7 +229,7 @@ export default {
     }
     @media (max-width: 1900px){
         #resume{
-            height: 200vh;
+            height: 260vh;
         }
         .img-degree{
             transition: none;
@@ -237,7 +237,7 @@ export default {
     }
     @media(max-width: 1080px){
         #resume{
-            height: 200vh;
+            height: 230vh;
         }
         img{
             display: none;
@@ -261,7 +261,7 @@ export default {
     }
     @media (max-width: 620px) {
         #resume{
-            height: 200vh;
+            height: 270vh;
         }
         .resume-content{
             display: flex;
@@ -289,9 +289,9 @@ export default {
         }
 
     }
-    @media (max-width: 340px){
+    @media (max-width: 440px){
         #resume{
-            height: 300vh;
+            height: 280vh;
         }
     }
 </style>

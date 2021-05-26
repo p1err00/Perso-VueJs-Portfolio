@@ -48,11 +48,11 @@ export default {
             desc: "Mes competences et aptitudes",
             competences:[
                 {"title" : "Gestion de projet", 
-                "desc" : "De la réfléxion à la conception, je saurais mettre en place les moyens adequates pour la réalisation de chaque projet"},
+                "desc" : "De la réfléxion à la conception, je saurai mettre en place les moyens adequats pour la réalisation de chaque projet"},
                 {"title" : "Developpement",
-                "desc" : "Parmis tous les choix existants, je saurais selectionner les outils appropriés pour mener à bien mon developpement"},
+                "desc" : "Parmis tous les choix existants, je saurai selectionner les outils appropriés pour mener à bien votre developpement"},
                 {"title" : "Formation",
-                "desc" : "Dans un corps de métier en constante évolution, je saurais me former aux nouvelles méthodes et technologies qui s'y ajoutent"}
+                "desc" : "Dans un corps de métier en constante évolution, je saurai me former aux nouvelles méthodes et technologies qui s'y adjoindre"}
             ],
             aptitudes:[
                {"title" : "Developpement logiciel",
@@ -156,7 +156,7 @@ export default {
 
     @media (max-width: 1080px){
         #app{
-            height: 100%;
+            height: 250vh;
         }
         .content{
             display: flex;
@@ -175,6 +175,18 @@ export default {
         .par-resume{
             font-size: 15px;
             filter: blur(0);
+        }
+    }
+
+    @media(max-width: 650px){
+        #app{
+            height: 300vh;
+        }
+    }
+
+    @media(max-width: 450px){
+        #app{
+            height: 280vh;
         }
     }
 </style>
