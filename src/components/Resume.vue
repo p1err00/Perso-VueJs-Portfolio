@@ -231,9 +231,7 @@ export default {
         #resume{
             height: 260vh;
         }
-        .img-degree{
-            transition: none;
-        }
+
     }
     @media(max-width: 1080px){
         #resume{
